@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CardView="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kundankishore.map.MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kundankishore.map.MapsActivity"/>
+    <!--<fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />-->
+
+    <LinearLayout
+        android:id="@+id/pickup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#fdfefe">
+        <!--<com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+            android:id="@+id/places_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pacv_googleMapsApiKey="AIzaSyDR8IyDyArUQ3nx80-lzgZYf1x_2hFZUtE"/>-->
+        <EditText
+            android:id="@+id/pickup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:hint="Pick Up"
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/destn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#fdfefe">
+
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:hint="Destination"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/pickup"/>
+
+    </LinearLayout>
+</RelativeLayout>
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kundankishore.map.MapsActivity"/>-->
